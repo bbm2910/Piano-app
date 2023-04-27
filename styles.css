@@ -1,0 +1,70 @@
+html {
+	font-size: 10px;
+	background: url('background.jpg') bottom center;
+	background-size: cover;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Bruno Ace SC', 'cursive', sans-serif;
+}
+
+.keys {
+	display: flex;
+	gap: 1%;
+	flex-wrap: wrap;
+	min-height: 50vh;
+	margin-top: 30vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.first-row {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
+.second-row {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+.third-row {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.key {
+	border: 0.1rem solid #e8f9fd;
+	border-radius: 2rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+	padding: 1rem 0.5rem;
+	transition: all 0.09s ease;
+	width: 11rem;
+	text-align: center;
+	color: #59ce8f;
+}
+
+.playing {
+	transform: scale(1.03);
+	border: 0.1rem solid #e8f9fd;
+	border-color: #ff1e00;
+	box-shadow: 0 0 1rem #ff1e00;
+	color: black;
+	background: #e8f9fd;
+	opacity: 50%;
+}
+
+kbd {
+	display: block;
+	font-size: 4rem;
+	font-family: 'Bruno Ace SC';
+}
+
+.sound {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: #e8f9fd;
+}
